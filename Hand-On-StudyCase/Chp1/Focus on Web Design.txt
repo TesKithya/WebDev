@@ -1,0 +1,21 @@
+W3School 
+1.What is the purpose of the site?
+The purpose of W3Schools is to provide online tutorials, references, and interactive tools to help users learn web development and programming languages such as HTML, CSS, JavaScript, Python, and more.
+
+2.Who is the intended audience?
+The site is intended for beginners and intermediate learners in programming and web development, as well as professionals who need a quick reference or wish to refresh their skills.
+
+3.Do you think that the site reaches its intended audience? Why or why not?
+Yes, W3Schools successfully reaches its intended audience because of its simple design, easy-to-understand explanations, and interactive features like the "Try It Yourself" editor. The site is user-friendly and provides practical examples, which make it appealing to its target audience.
+
+4.Is the site useful to you? Why or why not?
+Yes, the site is very useful to me as a computer science student. It helps me understand programming concepts quickly, offers concise explanations, and provides an interactive way to practice coding in real-time.
+
+5.List one interesting fact or issue that this site addresses.
+One interesting feature of the site is the “Try It Yourself” editor, where users can write and test code directly in the browser, making the learning process engaging and practical.
+
+6.Would you encourage others to visit this site?
+Yes, I would recommend this site to anyone interested in learning programming or web development. Its straightforward approach, wide range of topics, and hands-on practice tools make it an excellent resource for students and professionals alike.
+
+7.How could this site be improved?
+W3Schools could be improved by including more real-world project examples and advanced tutorials. Adding features like discussion forums or mentorship opportunities would also make the site more engaging and helpful for learners.
