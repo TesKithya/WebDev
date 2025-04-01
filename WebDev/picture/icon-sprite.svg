@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Trophy Icon -->
+  <symbol id="trophy-icon" viewBox="0 0 100 100">
+    <path d="M50 10 L70 10 L70 20 L75 20 C82 20 88 26 88 32 L88 40 C88 50 78 60 68 60 L65 60 C63 70 58 75 50 80 C42 75 37 70 35 60 L32 60 C22 60 12 50 12 40 L12 32 C12 26 18 20 25 20 L30 20 L30 10 Z" fill="#F1C40F" stroke="#E67E22" stroke-width="2"/>
+    <rect x="40" y="80" width="20" height="5" fill="#E67E22"/>
+    <rect x="35" y="85" width="30" height="5" fill="#E67E22"/>
+  </symbol>
+  
+  <!-- Grade Badge Icon -->
+  <symbol id="grade-badge" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="45" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+    <circle cx="50" cy="50" r="35" fill="#2980B9"/>
+    <text x="50" y="65" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="white">B</text>
+  </symbol>
+  
+  <!-- Scholarship Badge Icon -->
+  <symbol id="scholarship-badge" viewBox="0 0 100 100">
+    <path d="M50 10 L90 30 L90 70 L50 90 L10 70 L10 30 Z" fill="#9B59B6" stroke="#8E44AD" stroke-width="2"/>
+    <path d="M50 20 L80 35 L80 65 L50 80 L20 65 L20 35 Z" fill="#8E44AD"/>
+    <path d="M45 40 Q50 35 55 40 L65 60 Q55 65 45 60 Z" fill="white"/>
+    <rect x="45" y="60" width="10" height="20" fill="white"/>
+  </symbol>
+  
+  <!-- Achievement Icon -->
+  <symbol id="achievement-icon" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="45" fill="#2ECC71" stroke="#27AE60" stroke-width="2"/>
+    <path d="M30 50 L45 65 L75 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  
+  <!-- CTF Icon -->
+  <symbol id="ctf-icon" viewBox="0 0 100 100">
+    <rect x="20" y="20" width="60" height="60" rx="5" fill="#E74C3C" stroke="#C0392B" stroke-width="2"/>
+    <path d="M35 35 L65 35 L50 20 Z" fill="white"/>
+    <path d="M40 45 L60 45 M40 55 L60 55 M40 65 L60 65" stroke="white" stroke-width="4"/>
+  </symbol>
+  
+  <!-- Volunteer Icon -->
+  <symbol id="volunteer-icon" viewBox="0 0 100 100">
+    <circle cx="50" cy="35" r="20" fill="#F39C12" stroke="#E67E22" stroke-width="2"/>
+    <path d="M30 60 C30 50 70 50 70 60 L70 80 C70 85 65 90 60 90 L40 90 C35 90 30 85 30 80 Z" fill="#F39C12" stroke="#E67E22" stroke-width="2"/>
+    <path d="M50 40 L50 70 M40 50 L60 50" stroke="white" stroke-width="4"/>
+  </symbol>
+</svg>

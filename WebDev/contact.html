@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KithyaSite :: Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="page-container">
+        <main class="main-grid">
+            <nav class="main-nav">
+                <div class="logo"><b>Kithya<br> Site</b></div>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+                <div class="nav-links">
+                    <a href="home.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-user"></i> About</a>
+                    <a href="project.html"><i class="fas fa-code"></i> Project</a>
+                    <a href="skills.html"><i class="fas fa-cog"></i> Skills</a>
+                    <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="education&certification.html"><i class="fas fa-graduation-cap"></i> Education</a>
+                    <a href="achievement&awards.html"><i class="fas fa-trophy"></i> Achievements</a>
+                    <a href="hobbies&interests.html"><i class="fas fa-heart"></i> Hobbies</a>
+                </div>
+            </nav>
+
+            <div class="content-area">
+                <h1><i class="fas fa-paper-plane"></i> Contact Me</h1>
+                <p class="intro-text">Welcome to my contact page! Reach out for questions or collaboration ideas. I typically respond within 24-48 hours.</p>
+                
+                <section class="features">
+                    <div class="feature-card" style="--order: 0">
+                        <form class="contact-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-user"></i> Your Name:</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><i class="fas fa-envelope"></i> Your Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="message"><i class="fas fa-comment"></i> Your Message:</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="Hello Kithya, I'd like to discuss..." required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="feature-card" style="--order: 1">
+                        <h3><i class="fas fa-address-book"></i> Direct Contact</h3>
+                        <div class="contact-grid">
+                            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:kithyates@gmail.com">kithyates@gmail.com</a></p>
+                            <p><i class="fas fa-phone"></i> Phone: <a href="tel:+855964191850">+855 96 4191 850</a></p>
+                            <p><i class="fab fa-facebook"></i> Facebook: <a href="https://web.facebook.com/kithya.tes" target="_blank">Kithya's Facebook</a></p>
+                            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/TesKithya" target="_blank">TesKithya</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <i>
+                        <b>Contact</b><br>
+                        <a href="mailto:kithya@example.com">kithya@example.com</a><br>
+                        <i class="fas fa-phone"></i> <strong>Phone:</strong> +855 12 345 678
+                    </i>
+                </div>
+                <div class="footer-copyright">
+                    <i><strong>Copyright © 2025 KithyaSite</strong></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('nav-expanded');
+        });
+
+        // Form submission feedback
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent. I’ll get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

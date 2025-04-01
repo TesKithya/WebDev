@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KithyaSite :: Achievement & Awards</title>
+    <link rel="stylesheet" href="achievement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <main class="main-grid">
+            <nav class="main-nav">
+                <div class="logo"><b>Kithya<br>Site</b></div>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+                <div class="nav-links">
+                    <a href="home.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-user"></i> About</a>
+                    <a href="project.html"><i class="fas fa-code"></i> Project</a>
+                    <a href="skills.html"><i class="fas fa-cog"></i> Skills</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="education&certification.html"><i class="fas fa-graduation-cap"></i> Education</a>
+                    <a href="achievement&awards.html" class="active"><i class="fas fa-trophy"></i> Achievements</a>
+                    <a href="hobbies&interests.html"><i class="fas fa-heart"></i> Hobbies</a>
+                </div>
+            </nav>
+
+            <div class="content-area">
+                <h1 class="page-title">Achievement & Awards</h1>
+                <p class="intro-text">
+                    This page showcases my significant achievements, awards, and recognitions that reflect my dedication, 
+                    hard work, and growth in both personal and professional pursuits.
+                </p>
+
+                <div class="awards-section">
+                    <div class="section-header">
+                        <div class="icon-sprite crown-icon header-icon"></div>
+                        <h2>Academic Awards</h2>
+                    </div>
+                    <div class="awards-grid">
+                        <div class="award-card" style="--order: 0">
+                            <div class="award-badge">
+                                <div class="icon-sprite letter-b-icon badge-icon"></div>
+                            </div>
+                            <div class="award-details">
+                                <h3>Grade B in National Exam 2023</h3>
+                                <p>Achieved excellent results in the national examination, placing in the top percentile of students nationwide.</p>
+                                <a href="#" class="award-link">View Certificate</a>
+                            </div>
+                            <div class="award-highlight"></div>
+                        </div>
+                        <div class="award-card" style="--order: 1">
+                            <div class="award-badge">
+                                <div class="icon-sprite checkmark-icon badge-icon"></div>
+                            </div>
+                            <div class="award-details">
+                                <h3>Full Funding Scholarship</h3>
+                                <p>Awarded a prestigious full scholarship at American University of Phnom Penh based on academic merit.</p>
+                                <a href="#" class="award-link">View Certificate</a>
+                            </div>
+                            <div class="award-highlight"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements-section">
+                    <div class="section-header">
+                        <div class="icon-sprite shield-icon header-icon"></div>
+                        <h2>Notable Achievements</h2>
+                    </div>
+                    <div class="achievements-grid">
+                        <div class="achievement-card" style="--order: 2">
+                            <div class="achievement-icon">
+                                <div class="icon-sprite whiteboard-icon badge-icon"></div>
+                            </div>
+                            <div class="achievement-details">
+                                <h3>Capture the Flag (CTF) Cambodia 2024</h3>
+                                <p>Participated in this prestigious cybersecurity competition, demonstrating technical skills and problem-solving abilities.</p>
+                                <a href="#" class="achievement-link">See Details</a>
+                            </div>
+                            <div class="achievement-highlight"></div>
+                        </div>
+                        <div class="achievement-card" style="--order: 3">
+                            <div class="achievement-icon">
+                                <div class="icon-sprite document-icon badge-icon"></div>
+                            </div>
+                            <div class="achievement-details">
+                                <h3>Volunteer at AMT Scholarship Association</h3>
+                                <p>Contributed time and skills to support educational initiatives and scholarship programs for deserving students.</p>
+                                <a href="#" class="achievement-link">See Details</a>
+                            </div>
+                            <div class="achievement-highlight"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-achievement">
+                    <div class="featured-content">
+                        <div class="icon-sprite star-icon header-icon"></div>
+                        <h2>Future Achievement</h2>
+                        <h3>Web Development</h3>
+                        <p>Recognized for exceptional skill in creating responsive and accessible web applications with a focus on user experience.</p>
+                        <a href="#" class="feature-link">Learn More</a>
+                    </div>
+                    <div class="certificate-display">
+                        <div class="certificate">
+                            <img src="images/certificate-placeholder.png" alt="Web Development Certificate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <i>
+                        <b>Contact</b><br>
+                        <i class="fas fa-envelope"></i> <strong>Email:</strong> 
+                        <a href="mailto:kithya@example.com">kithya@example.com</a><br>
+                        <i class="fas fa-phone"></i> <strong>Phone:</strong> +855 12 345 678
+                    </i>
+                </div>
+                <div class="footer-copyright">
+                    <i><strong>Copyright © 2025 KithyaSite</strong></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('nav-expanded');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #0a2643;
+    --secondary-color: #3498db;
+    --text-light: #ecf0f1;
+    --text-dark: #333;
+    --bg-gradient: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    --card-bg: #ffffff;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: var(--text-dark);
+    line-height: 1.3;
+}
+
+/* Main Grid Layout - Match home page grid layout */
+.page-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "nav main"
+        "nav footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr auto;
+    background-color: #f5f7fa;
+}
+
+.main-grid {
+    display: contents;
+}
+
+.content-area {
+    grid-area: main;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+}
+
+/* Navigation Styles */
+.main-nav {
+    grid-area: nav;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    position: relative;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--secondary-color);
+}
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--secondary-color);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Main Content Styles */
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* About Page specific styles with two-column layout using flexbox */
+.about-container {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Left column for profile image */
+.profile-column {
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+}
+
+/* Right column for content */
+.content-column {
+    flex: 2;
+}
+
+/* Image styles with z-index work */
+.profile-image-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+/* Badge positioned with z-index over the image */
+.profile-badge {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    z-index: 10;
+}
+
+/* Fixed position summary card */
+.profile-summary {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 2rem;
+    margin-top: 2rem;
+}
+
+.profile-summary h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.profile-summary p {
+    margin-bottom: 0.75rem;
+}
+
+.profile-summary i {
+    color: var(--secondary-color);
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* About section styles */
+.about-section {
+    margin-bottom: 2rem;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--secondary-color);
+}
+
+/* Core values grid layout */
+.core-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.value-item {
+    background-color: rgba(52, 152, 219, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: calc(var(--order) * 0.15s);
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+    grid-area: footer;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.8rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    height: 60px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.footer-contact i {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    white-space: nowrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1280px) {
+    .page-container {
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    .main-nav {
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .profile-column {
+        max-width: 100%;
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    
+    .profile-image-wrapper {
+        flex: 1;
+        max-width: 250px;
+    }
+    
+    .profile-summary {
+        flex: 2;
+        position: static;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-column {
+        flex-direction: column;
+    }
+    
+    .profile-image-wrapper {
+        max-width: 100%;
+    }
+    
+    .core-values {
+        grid-template-columns: 1fr;
+    }
+    
+    dd {
+        margin-left: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    footer {
+        padding: 0.7rem;
+        height: auto;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}

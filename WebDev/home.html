@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KithyaSite :: Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="page-container">
+        <main class="main-grid">
+            <nav class="main-nav">
+                <div class="logo"><b>Kithya<br> Site</b></div>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+                <div class="nav-links">
+                    <a href="home.html" class="active"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-user"></i> About</a>
+                    <a href="project.html"><i class="fas fa-code"></i> Project</a>
+                    <a href="skills.html"><i class="fas fa-cog"></i> Skills</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="education&certification.html"><i class="fas fa-graduation-cap"></i> Education</a>
+                    <a href="achievement&awards.html"><i class="fas fa-trophy"></i> Achievements</a>
+                    <a href="hobbies&interests.html"><i class="fas fa-heart"></i> Hobbies</a>
+                </div>
+            </nav>
+
+            <div class="content-area">
+                <section class="hero">
+                    <picture>
+                        <source media="(min-width: 1280px)" srcset="picture/hero.jpg">
+                        <source media="(min-width: 800px)" srcset="picture/hero.jpg">
+                        <img src="picture/hero.jpg" alt="KithyaTes working on laptop" class="hero-image">
+                    </picture>
+                    <div class="hero-content">
+                        <h1>KithyaTes - Software Development Student</h1>
+                        <p>Welcome to my portfolio website! This site showcases my skills in HTML and CSS, as part of my Web Development learning journey.</p>
+                    </div>
+                </section>
+                
+                <section class="features">
+                    <div class="feature-card" style="--order: 0">
+                        <h3><i class="fas fa-code"></i> Project</h3>
+                        <p>Portfolio Website</p>
+                    </div>
+                    <div class="feature-card" style="--order: 1">
+                        <h3><i class="fas fa-cog"></i> Skill</h3>
+                        <p>HTML and CSS</p>
+                    </div>
+                    <div class="feature-card" style="--order: 2">
+                        <h3><i class="fas fa-bullseye"></i> Goal</h3>
+                        <p>Demonstrate my web development knowledge and skills.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <i>
+                        <b>Contact</b><br>
+                        <a href="mailto:kithya@example.com">kithya@example.com</a><br>
+                        <i class="fas fa-phone"></i> <strong>Phone:</strong> +855 12 345 678
+                    </i>
+                </div>
+                <div class="footer-copyright">
+                    <i><strong>Copyright © 2025 KithyaSite</strong></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('nav-expanded');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KithyaSite :: Project</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Main content area with navigation and content -->
+        <main class="main-grid">
+            <nav class="main-nav">
+                <div class="logo"><b>Kithya<br>Site</b></div>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+                <div class="nav-links">
+                    <a href="home.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-user"></i> About</a>
+                    <a href="project.html" class="active"><i class="fas fa-code"></i> Project</a>
+                    <a href="skills.html"><i class="fas fa-cog"></i> Skills</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="education&certification.html"><i class="fas fa-graduation-cap"></i> Education</a>
+                    <a href="achievement&awards.html"><i class="fas fa-trophy"></i> Achievements</a>
+                    <a href="hobbies&interests.html"><i class="fas fa-heart"></i> Hobbies</a>
+                </div>
+            </nav>
+
+            <!-- Content Column -->
+            <div class="content-area">
+                <h1>Project</h1>
+                
+                <p>This project involved creating a fully functional personal portfolio website using HTML. 
+                The website showcases my skills, projects, education, and hobbies, serving as a digital resume for potential employers and collaborators.</p>
+                
+                <h2>My Projects</h2>
+                
+                <div class="projects-grid">
+                    <article class="project-card" style="--order: 0">
+                        <div class="project-content">
+                            <h3>Front-End Dev (copy template)</h3>
+                            <ul class="project-details">
+                                <li><strong>Project title:</strong> Kithya Software Service</li>
+                                <li><strong>Description:</strong> A website for clients to get a software service</li>
+                                <li><strong>Technologies used:</strong> HTML, CSS, and JavaScript</li>
+                                <li><strong>Challenges:</strong> JavaScript – since I had never learned it before, I had to break down the research one by one</li>
+                                <li><strong>Achievement:</strong> Knowledge of Web Development for the first time</li>
+                            </ul>
+                            <a href="https://teskithya.github.io/TKProject/" target="_blank" class="project-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <div class="project-image-container">
+                            <span class="project-tag">Web Dev</span>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="picture/web.png">
+                                <source media="(min-width: 800px)" srcset="picture/web.png">
+                                <img src="picture/web.png" alt="Web Development Project" class="project-image">
+                            </picture>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" style="--order: 1">
+                        <div class="project-content">
+                            <h3>Password Management</h3>
+                            <ul class="project-details">
+                                <li><strong>Project title:</strong> Password Management</li>
+                                <li><strong>Description:</strong> A software where you can store your passwords safely, like notes, with a master account</li>
+                                <li><strong>Technologies used:</strong> Python</li>
+                                <li><strong>Challenges:</strong> Implementing two-factor authentication was tricky, and using files for encryption and decryption was more complex than using an SQL database</li>
+                                <li><strong>Achievement:</strong> Successfully implemented password storage and encryption with Python</li>
+                            </ul>
+                            <a href="https://github.com/TesKithya/CSA-Final-Project.git" target="_blank" class="project-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <div class="project-image-container">
+                            <span class="project-tag">Python</span>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="picture/password-management.jpg">
+                                <source media="(min-width: 800px)" srcset="picture/password-management.jpg">
+                                <img src="picture/password-management.jpg" alt="Password Manager Project" class="project-image">
+                            </picture>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <i>
+                        <b>Contact</b><br>
+                        <i class="fas fa-envelope"></i> <strong>Email:</strong> 
+                        <a href="mailto:kithya@example.com">kithya@example.com</a><br>
+                        <i class="fas fa-phone"></i> <strong>Phone:</strong> +855 12 345 678
+                </div>
+                <div class="footer-copyright">
+                    <i><strong>Copyright © 2025 KithyaSite</strong></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('nav-expanded');
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9297e9b71f43455a',t:'MTc0MzUwODY4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
