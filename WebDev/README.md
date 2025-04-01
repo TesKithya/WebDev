@@ -91,8 +91,6 @@ This portfolio serves as a digital resume, highlighting Kithya Tes’s journey a
 
 ---
 
-## Setup Instructions
-
 ### Prerequisites
 - A web browser (e.g., Chrome, Firefox).
 - Git (installed and configured).
